@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashoard</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="sidebar">
+        <div class="sidebar-container">
+          <h1 class="e-Vikao-h1">e-Vikao</h1>
+          <ul class="aside-list">
+            <li>Dashboards</li>
+            <li>Meetings</li>
+            <li>Agendas</li>
+            <li>Reports</li>
+            <li>User Managment</li>
+            <li>Settings</li>
+          </ul>
+          <p class="aside-footer">Managed by Philip</p>
+        </div>
+      </div>
+      <div class="main">
+        <div class="nav">
+          <div class="">
+            <h2>Dashboard</h2>
+          </div>
+          <span class="user-nav">
+            <h3>Marcus White</h3>
+            <img src="images/meeting.png" class="user-image" alt="" />
+          </span>
+        </div>
+        <section class="dashboard-container">
+          <div class="calender dashboard-boader">
+            <img
+              class="dashboard-image calendar-image"
+              src="images/calendar.png"
+              alt=""
+            />
+
+            <h1>Next 11:00 AM</h1>
+          </div>
+          <div class="admin-meeting dashboard-boader">
+            <img class="dashboard-image" src="images/calendar.png" alt="" />
+            <p>Administration Meetings 12</p>
+          </div>
+          <div class="depart-meeting dashboard-boader">
+            <img class="dashboard-image" src="images/calendar.png" alt="" />
+            <p>Departamental Meetings 5</p>
+          </div>
+          <div class="agenda dashboard-boader">
+            <h3>Prioritized Agendas</h3>
+            <ul>
+              <li>Budget review</li>
+              <li>Project kickoff</li>
+              <li>Policy update</li>
+            </ul>
+          </div>
+          <div class="agenda-progress dashboard-boader">
+            <h3>Agenda Progress</h3>
+            <input type="range" min="0" max="100" />
+            <p><span class="progress-percent">70%</span> progress</p>
+          </div>
+        </section>
+        <div class="footer">
+          <p class="footer">&copy;2025 Managed by Philip</p>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

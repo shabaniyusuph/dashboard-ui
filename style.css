@@ -1,0 +1,167 @@
+body {
+  padding: 0;
+  font-family: poppins;
+  background-color: aliceblue;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+}
+
+/* sidebar */
+.sidebar {
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+.e-Vikao-h1 {
+  padding-top: 20px;
+  margin: 22px 35px 0;
+}
+
+.sidebar-container {
+  height: 90vh;
+  width: 25vw;
+  background: rgb(9, 9, 32);
+  position: fixed;
+  border-radius: 10px;
+  position: relative;
+}
+.aside-list {
+  list-style: none;
+}
+.aside-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  cursor: pointer;
+  text-shadow: 0 0 30px white;
+}
+
+.aside-list li {
+  padding: 0.7rem;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+.aside-list li:hover {
+  background-color: rgb(69, 66, 66);
+  border-radius: 5px;
+  color: white;
+  /* box-shadow: 0 0 0 3px gray; */
+}
+
+/* Main */
+.main {
+  /* margin-left: 220px; */
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.user-image {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid grey;
+  padding: 7px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.user-image:hover {
+  opacity: 1;
+  box-shadow: 0 0 3px black;
+}
+.user-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-image {
+  width: 30px;
+  height: 30px;
+}
+/* dashboard */
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 20rem 10rem 15rem; */
+  grid-template-rows: 15rem 15rem;
+  gap: 23px 22px;
+}
+.dashboard-image {
+  width: 100px;
+  height: 100px;
+}
+.agenda {
+  grid-area: 2 / 1 / 2 / 3;
+}
+
+.dashboard-container {
+  box-shadow: 0 0 1px grey;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+}
+.dashboard-boader {
+  box-shadow: 0 0 1px grey;
+  border-radius: 10px;
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
+}
+
+.dashboard-image {
+}
+.calendar-image {
+  background-color: rgba(123, 0, 255, 0.817);
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.calendar-image p {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+.progress-percent {
+  font-size: 3.2rem;
+  display: block;
+  /* font-weight: 0px; */
+}
+.depart-meeting,
+.admin-meeting > p {
+  font-size: 1.3rem;
+}
+/* footer */
+
+.footer {
+  height: 100px;
+}
+/* mobile
+ */
+
+@media screen and (max-width: 800px) {
+  .sidebar-container {
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1px 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
